@@ -1,0 +1,319 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family:extraboldacro;
+  src:url(fonts/acronym-extraBold.ttf);
+}
+@font-face {
+  font-family:TitleFont;
+  src:url(fonts/acronym-Bold.ttf);
+}
+@font-face {
+  font-family:bodyfont;
+  src:url(fonts/pmn-caecilia-85-heavy.woff);
+}
+@font-face {
+  font-family:Kaushan;
+  src:url(fonts/KaushanScript-Regular.otf);
+}
+
+body {
+background-color:white;
+}
+
+
+.main_title{
+  position: sticky;
+  margin-bottom: 20px;
+  top: -1px;
+  text-align: center;
+  font-family:Titlefont,sans-serif;
+  font-size: 40px;
+  padding-left: 6px;
+  background-color:#222222;
+  color:white;
+  font-weight:500;
+  border-bottom: 0.5px solid white;
+  z-index: 50;
+}
+
+.firstwords{
+  font-style: normal;
+  font-family:bodyfont,sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.main_text{
+  font-style: normal;
+  font-family:bodyfont,sans-serif;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 370px;
+}
+
+.box{
+  position: relative;
+  float:left;
+  width:40%;
+  height:200px;
+  background-color:white;
+  background-image:url(images/keyboardcontraste0.jpg);
+  background-size: cover;
+  border:11px solid #222222;
+  margin:5px;
+  margin-left: 0px;
+  margin-top: 20px;
+  text-align: left;
+  margin-bottom: 25px;
+  display: block;
+  font-size: 35px;
+}
+
+#box_p{
+  font-family: extraboldacro,sans-serif;
+}
+
+.box1{
+	position: absolute;
+  padding: 13px;
+  padding-left: 29px;
+	width: 48.5%;
+	height: 46%;
+	top: 0%;
+	left: 0%;
+	border: 3px solid black;
+  margin: 1%;
+  transition: 0.7s;
+}
+
+.box2{
+	position: absolute;
+  padding: 13px;
+  padding-left: 59px;
+  width: 48%;
+  height: 46%;
+	top: 0%;
+	left: 50%;
+  border: 3px solid black;
+  margin: 1%;
+  transition: 0.7s;
+}
+
+.box3{
+	position: absolute;
+  padding: 13px;
+  padding-left: 64px;
+  width: 48.5%;
+  height: 46%;
+	top: 49%;
+	left: 0%;
+  border: 3px solid black;
+  margin: 1%;
+  transition: 0.7s;
+}
+
+.box4{
+  position: absolute;
+  padding: 13px;
+  padding-left: 95px;
+  width: 48%;
+  height: 46%;
+  top: 49%;
+  left: 50%;
+  border: 3px solid black;
+  margin: 1%;
+  transition: 0.7s;
+}
+
+.box1:hover{
+    background-color:black;
+    }
+.box1:hover    a{
+    color:white;
+}
+
+.box2:hover{
+    background-color:black;
+    }
+.box2:hover    a{
+    color:white;
+}
+
+.box3:hover{
+    background-color:black;
+    }
+.box3:hover    a{
+    color:white;
+}
+
+.box4:hover{
+    background-color:black;
+    }
+.box4:hover    a{
+    color:white;
+}
+
+#midtext{
+  float:left;
+  width:58%;
+  height:200px;
+  padding-top:55px;
+  background-color:white;
+  border:0px solid black;
+  margin:5px;
+  margin-left: 7px;
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 25px;
+
+}
+
+a{
+	text-decoration:none;
+	color:black;
+}
+
+.container {
+    position: relative;
+    transition: 0.7s;
+    clear:both; /*pour que ca n'overlap pas les elements floated left, on utilise clear. */
+    margin-bottom:24px;
+}
+
+.image_presentation{
+  position: relative;
+  float:left;
+  width:20%;
+  height:500px;
+  background-image:url(images/object_apple.jpg);
+  background-size: cover;
+  border:5px solid #222222;
+  margin:5px;
+  margin-left: 30px;
+  margin-top: 10px;
+  text-align: left;
+  margin-bottom: 25px;
+  display: block;
+  font-size: 35px;
+}
+
+#banner-sea{
+  background-image: url("images/banner_sea_cut_bw.png");
+  width: 100%;
+  height: 200px;
+  transition: background-image 0.7s ease-in-out;
+  alt="banner";
+}
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: TitleFont, sans-serif;
+    font-size:80px;
+}
+
+#fond_blanc{
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity:0.1;
+  width:685px;
+  height:110px;
+  transition: 0.7s;
+}
+
+
+.container:hover #banner-sea{
+  background-image: url("images/banner_sea_negatif.png");
+  width: 100%;
+  height: 200px;
+  alt="banner";
+  border:0.5px solid black;
+}
+
+.container:hover #centered {
+  color:black;
+}
+
+.container:hover #fond_blanc{
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0);
+  border:10px solid black;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 56;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    font-family: Kaushan, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.bouton{
+  position: sticky;
+  top: -50px;
+  left: 1465px;
+  z-index: 55;
+}
+
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%;
+    }
+}
